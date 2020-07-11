@@ -43,8 +43,8 @@ function textAreaAdjust(obj) {
 }
 
 function countChar(obj){
-    document.getElementById("counter-char").innerHTML = "qtd de caracteres: "+obj.value.length+"/1000";
-    if(obj.value.length >= 1000){
+    document.getElementById("counter-char").innerHTML = "qtd de caracteres: "+obj.value.length+"/10000";
+    if(obj.value.length >= 10000){
         document.getElementById("counter-char").style.color = "#c71c38";
         document.getElementById("counter-char").style.fontWeight = "bold";
     } else {

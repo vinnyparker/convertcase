@@ -1,0 +1,141 @@
+
+:root {
+  --greenmedium: #47d392;
+  --greenpale: #85ebbc;
+  --bgcolor: #eeeeee;
+}
+
+::placeholder {
+    color: #bbb;
+}
+
+* {
+    outline-style: none;
+}
+
+body {
+    margin: 0;
+    background: var(--bgcolor);  
+    
+    font-size: 14px;
+    font-family: 'Open Sans'; 
+}
+
+
+h1 {
+    margin: 16px 0;
+    
+    color: #333;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+small {
+    color: #999;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    
+    margin: auto;
+    padding: 0 20px;
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+textarea {
+    padding: 12px 0;
+    border: none;
+    resize: none;
+    color: #555;
+    font-family: 'Open Sans';
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: justify;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+#textarea-holder {
+    background: #fff;
+}
+
+#textarea-container {
+    position: relative;
+    
+    border-left: 2px solid var(--bgcolor);
+    border-right: 2px solid var(--bgcolor);
+}
+
+
+button {
+    margin: 20px 0;
+    padding: 10px;
+    width: 20%;
+    
+    background: var(--greenmedium);
+    border: none;
+    border-radius: 8px;
+    
+    color:  white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+button:hover {
+    background: var(--greenpale);
+}
+
+.counter {
+    position: absolute;
+    bottom: 0px;   
+    color: #aaa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+#counter-char {
+    right: 20px;
+}
+
+#counter-word {
+    left: 20px;
+}
+
+
+.float-right-custom {
+    float: right !important;
+}
+@media (min-width: 576px) {
+    .float-right-custom{
+        float: right!important;
+    }
+}
+
+
+/*possiveis alterações q devem funcionar o footer*/
+#footer-message {
+    background-color:#fff;
+    width:100%;
+    height:25vh;
+    position:absolute;
+    margin-left:-2.6vh;
+}
+#footer-message {
+    float:left;
+    margin-top:2.5vh;
+    font-size:15px;
+    font-family: arial, monospace;
+    margin-left:1.5vh;
+}
+strong{
+    float:left;
+    margin-top:1.5%;
+    margin-left:3vh;
+}
